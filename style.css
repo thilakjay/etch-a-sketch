@@ -30,13 +30,15 @@ body{
 #main {
     display: flex;   
     align-items: center;
-    justify-content: start; 
+    justify-content: flex-start; 
     width:70%;
+    border: 1px solid black;
 }
 
 #sidebar {
     display: flex; 
-    flex-direction: column;   
+    flex-direction: column;
+    justify-content: flex-start; 
     margin: 33px;
     height: 100%;
 }
