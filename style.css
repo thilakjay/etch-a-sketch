@@ -6,33 +6,44 @@ body{
 
 #title {
     font-size: 50px;
+    margin-bottom: 10px;
 }
 
-input {
-    width: 100px;
+.button {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px;   
+    width: 150px;
+    height: 50px;
     margin: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    transition-property: transform, box-shadow;
+    transition-duration: 0.3s;
+}
+
+.button:hover {
+    box-shadow: 5px 5px 5px;
+    transform: scale(1.1);
 }
 
 #main {
-    display: flex;
-    justify-content: space-evenly;
+    display: flex;   
     align-items: center;
-    border: 1px solid black;
-    width:60%;
+    justify-content: start; 
+    width:70%;
 }
 
 #sidebar {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
-    margin: 20px;
+    display: flex; 
+    flex-direction: column;   
+    margin: 33px;
     height: 100%;
 }
 
 #container {
     display: flex;
-    flex-direction: column;
-    border: 1px black solid;
+    flex-direction: column;  
     box-shadow: 5px 5px 15px;
     width: 700px;
     height: 700px;
@@ -46,5 +57,7 @@ input {
     box-sizing: border-box;
     border: 0.5px black solid; 
     flex: 1 1 auto;
-} 
+    transition-property: background-color;
+    transition-duration: 0.4s;
+}   
 
